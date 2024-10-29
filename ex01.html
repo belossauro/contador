@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Super Contador</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body onload="carregar()">
+  <header>
+    <h1>Vamos Contar!</h1>
+  </header>
+  <section>
+    <div id="inputs">
+      <div class="campos" id="inicio">Início: <input type="number" id="inicio" oninput="puff1()"></div>
+      <div id="msgErroInicio" style="display: none;"></div>
+      <div class="campos">Fim: <input type="number" id="fim" oninput="puff2()"></div>      
+      <div id="msgErroFim" style="display: none;"></div>
+      <div class="campos">Intervalo: <input type="number" id="intervalo" oninput="puff3()"></div>
+      <div id="msgErroIntervalo" style="display: none;"></div>
+    </div>
+    <div style="display: flex; justify-content: center;">
+      <input type="button" value="Contar" onclick="contar()">
+    </div>
+    <div id="resultado" style="display: none;">
+      
+    </div>
+  </section>
+  <footer>
+    <p>&copy;CursoemVídeo</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
